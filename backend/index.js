@@ -14,7 +14,7 @@ app.use(cors()); // Allows cross-origin requests
 app.use(express.json()); // Allows the server to accept and parse JSON in request bodies
 
 // Get the port and MongoDB URI from environment variables
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 const MONGO_URI = process.env.MONGO_URI;
 
 // Connect to MongoDB
