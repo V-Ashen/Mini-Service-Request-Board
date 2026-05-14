@@ -1,5 +1,5 @@
 // index.js
-
+if (!global.crypto) { global.crypto = require('crypto'); }
 // Import required packages
 const express = require('express');
 const mongoose = require('mongoose');
