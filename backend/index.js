@@ -23,8 +23,19 @@ mongoose.connect(MONGO_URI)
   .catch(error => console.error('Error connecting to MongoDB:', error));
 
 // A simple test route to make sure the server is running
-app.get('/', (req, res) => {
-  res.send('Backend server is running!');
+//app.get('/', (req, res) => {
+ // res.send('Backend server is running!');
+//});
+
+// Import the router
+const jobRoutes = require('./routes/jobs');
+
+// Tell Express to use the router for any request to /api/jobs
+app.use('/api/jobs', jobRoutes);
+
+// Paste this right above app.listen(...)
+app.post('/test', (req, res) => {
+  res.status(200).json({ message: "Direct hit! The server is receiving POST requests." });
 });
 
 // Start the server
