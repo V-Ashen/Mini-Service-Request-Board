@@ -4,7 +4,7 @@ This project is a stripped-down, single-page version of a service request platfo
 
 ## 🔗 Live Links
 - **Live Frontend (Vercel):** https://mini-service-request-board-v-ashen-8223s-projects.vercel.app/
-- **Live API (Back4App):** https://backend-geepffm6.b4a.run/api/jobs
+- **Live API (Back4App):** https://mini-service-request-board-vflx.vercel.app/
 
 ---
 
@@ -12,7 +12,7 @@ This project is a stripped-down, single-page version of a service request platfo
 - **Frontend:** Next.js (App Router), Tailwind CSS
 - **Backend:** Node.js + Express.js (REST API)
 - **Database:** MongoDB Atlas (Mongoose ODM)
-- **Deployment:** Vercel & Back4App
+- **Deployment:** Vercel (Frontend & Backend)
 
 ---
 
