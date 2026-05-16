@@ -13,7 +13,6 @@ app.use(express.json());
 const MONGO_URI = process.env.MONGO_URI;
 
 // --- SERVERLESS CONNECTION LOGIC ---
-// We "cache" the connection so Vercel doesn't reconnect every single time
 let cachedDb = null;
 
 async function connectToDatabase() {
